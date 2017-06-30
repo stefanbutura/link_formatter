@@ -1,0 +1,21 @@
+<?php
+
+/**
+ * @file
+ * Nothing to see here. It's all about the Field/FieldFormatter.
+ */
+
+/**
+ * Implements hook_theme().
+ */
+
+function link_formatter_theme($existing, $type, $theme, $path) {
+    return array(
+        'link_formatter' => array(
+            'variables' => array('uri' => NULL, 'url_type' => NULL),
+            'template' => 'link-formatter',
+        ),
+    );
+}
+
+
